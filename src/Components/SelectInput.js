@@ -38,7 +38,7 @@ class SelectInput extends Component {
           <div className="card-content">
             <div className="card-image" style={{backgroundImage: `url(${myurl})`}}></div>
             <div className="card-title">Select</div>
-            <p className="card-text">
+            <div className="card-text">
               <div className="input">
                 <select className="selectInput" onChange={this.handleChange}>
                   <option value="">Choose one:</option>
@@ -50,10 +50,10 @@ class SelectInput extends Component {
                 </select>
               </div>
               <div className="output">
-                <label for="selectOutput">Image: </label>
+                <label htmlFor="selectOutput">Image: </label>
                 <span name="selectOutput">{this.state.status}</span>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </li>

@@ -35,7 +35,7 @@ class CheckboxInput extends Component {
         <div className="card">
           <div className="card-content">
             <div className="card-title">Checkbox</div>
-            <p className="card-text">
+            <div className="card-text">
               <div className="input" onChange={this.handleChange}>
                 <input type="checkbox" name="checkboxInput" value="1" className="checkboxInput" />
                 <input type="checkbox" name="checkboxInput" value="2" className="checkboxInput" />
@@ -44,10 +44,10 @@ class CheckboxInput extends Component {
                 <input type="checkbox" name="checkboxInput" value="5" className="checkboxInput" />
               </div>
               <div className="output">
-                <label for="checkboxOutput">Count: {this.countChecks(this.state.status)}</label>
+                <label htmlFor="checkboxOutput">Count: {this.countChecks(this.state.status)}</label>
                 <span name="checkboxOutput"></span>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </li>

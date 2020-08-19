@@ -19,15 +19,15 @@ class TextInput extends Component {
         <div className="card">
           <div className="card-content">
             <div className="card-title">Text</div>
-            <p className="card-text">
+            <div className="card-text">
               <div className="input btn-block">
                 <input type="text" placeholder="Write here!" className="textInput" onChange={this.handleChange}/>
               </div>
               <div className="output">
-                <label for="textOutput">State: </label>
+                <label htmlFor="textOutput">State: </label>
                 <span name="textOutput">{this.state.text}</span>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </li>

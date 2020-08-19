@@ -21,15 +21,15 @@ class ColorInput extends Component {
           <div className="card-content">
             <div className="card-image" style={{backgroundColor: this.state.status}}></div>
             <div className="card-title">Color</div>
-            <p className="card-text">
+            <div className="card-text">
               <div className="input btn-block">
                 <input type="color" className="colorButton" onChange={this.handleChange}/>
               </div>
               <div className="output" >
-                <label for="colorOutput">State: </label>
+                <label htmlFor="colorOutput">State: </label>
                 <span name="colorOutput">{this.state.status}</span>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </li>

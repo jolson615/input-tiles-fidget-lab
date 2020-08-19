@@ -19,15 +19,15 @@ class DateInput extends Component {
         <div className="card">
           <div className="card-content">
             <div className="card-title">Date</div>
-            <p className="card-text">
+            <div className="card-text">
               <div className="input btn-block">
                 <input type="date" className="textInput" onChange={this.handleChange} />
               </div>
               <div className="output">
-                <label for="dateOutput">State: </label>
+                <label htmlFor="dateOutput">State: </label>
                 <span name="dateOutput">{this.state.status}</span>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </li>

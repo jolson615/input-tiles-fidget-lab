@@ -24,15 +24,15 @@ class UrlInput extends Component {
         <div className="card">
           <div className="card-content">
             <div className="card-title">URL</div>
-            <p className="card-text">
+            <div className="card-text">
               <div className="input btn-block">
                 <input type="url" placeholder="Type a URL here!" className="textInput" onChange={this.handleChange} />
               </div>
               <div className="output">
-                <label for="urlOutput">State: </label>
+                <label htmlFor="urlOutput">State: </label>
                 <span name="urlOutput"><a href={this.renderUrl(this.state.status)} id="url" target="_blank" rel="noopener noreferrer">&nbsp;{this.state.status}</a></span>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </li>

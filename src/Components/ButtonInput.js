@@ -31,15 +31,15 @@ class ButtonInput extends Component {
         <div className="card">
           <div className="card-content">
             <div className="card-title">Button</div>
-            <p className="card-text">
+            <div className="card-text">
               <div className="input btn-block">
                 <input type="button" value="Click me!" className="btn" onClick={this.handleChange}/>
               </div>
               <div className="output">
-                <label for="buttonOutput">State: </label>
+                <label htmlFor="buttonOutput">State: </label>
                 <span name="buttonOutput">{this.displayBoolean(this.state.status)}</span>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </li>
